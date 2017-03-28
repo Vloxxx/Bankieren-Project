@@ -1,0 +1,26 @@
+﻿<Window x:Class="Bankieren.Spaarrekening"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bankieren"
+        mc:Ignorable="d"
+        Title="Spaarrekening" Height="550" Width="324" Closing="Window_Closing">
+    <Grid Loaded="Grid_Loaded">
+        <Image x:Name="logo_jpg" Margin="72,0,95.6,370.8"  Source="Images/logo.jpg" Width="150" Height="150" />
+        <Label x:Name="lblgegevens" Content="Gegevens" HorizontalAlignment="Left" Margin="118,164,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <TextBlock x:Name="tbkHuidigSaldo" Text="Huidig saldo:" HorizontalAlignment="Left" Margin="82,210,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblHuidigSaldo" Content="0" HorizontalAlignment="Left" Margin="224,205,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblOverschrijven" Content="Overschrijven" HorizontalAlignment="Left" Margin="106,279,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label x:Name="lblBepaal" Content="Bepaal het te overschrijven bedrag:" HorizontalAlignment="Left" Margin="72,325,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbxBedrag" HorizontalAlignment="Left" Margin="97,356,0,0" VerticalAlignment="Top" Width="120" Height="26" FontSize="15"  PreviewTextInput="DoublePreviewTextInput" MaxLength="9"/>
+        <Button x:Name="btnVerzenden" Content="Verzenden" HorizontalAlignment="Left" Margin="82,430,0,0" VerticalAlignment="Top" Width="166" FontSize="16" Height="46" Click="btnVerzenden_Click"/>
+        <TextBlock x:Name="tbkOpgebouwdeRente" Text="Opgebouwde rente:" HorizontalAlignment="Left" Margin="82,245,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblOpgebouwdeRente" Content="0" HorizontalAlignment="Left" Margin="224,240,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnClose" Content="Sluiten" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="10,10,0,0" Click="btnClose_Click"/>
+        <Label x:Name="lblEuro" Content="€ " HorizontalAlignment="Left" Margin="199,205,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblEuro_Copy" Content="€ " HorizontalAlignment="Left" Margin="199,240,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblEuro_Copy1" Content="€ " HorizontalAlignment="Left" Margin="72,356,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

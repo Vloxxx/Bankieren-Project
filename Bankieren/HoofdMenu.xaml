@@ -1,0 +1,24 @@
+﻿<Window x:Class="Bankieren.HoofdMenu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bankieren"
+        mc:Ignorable="d"
+        Title="HoofdMenu" Height="550" Width="484" Closing="Window_Closing">
+    <Grid Loaded="Grid_Loaded">
+        <Image x:Name="logo_jpg" Margin="170,24,156,345" Source="Images/logo.jpg" Height="150" Width="150"/>
+        <Label x:Name="lblpersoonlijk" Content="Persoonlijke gegevens" HorizontalAlignment="Left" Margin="160,186,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <TextBlock x:Name="tbkVoornaam" Text="Voornaam:" HorizontalAlignment="Left" Margin="105,217,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="tbkAchternaam" Text="Achternaam:" HorizontalAlignment="Left" Margin="105,248,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="tbkBSN" Text="BSN:" HorizontalAlignment="Left" Margin="105,279,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblVoornaam" Content="-" HorizontalAlignment="Left" Margin="240,217,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblAchternaam" Content="-" HorizontalAlignment="Left" Margin="240,248,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblBSN" Content="-" HorizontalAlignment="Left" Margin="240,279,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lvlVerwijzing" Content="Verwijzingen" HorizontalAlignment="Left" Margin="175,310,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Button x:Name="btnOpenBetaalrekening" Content="Open Betaalrekening" HorizontalAlignment="Left" Margin="140,363,0,0" VerticalAlignment="Top" Width="180" Height="50" FontSize="15" Click="btnOpenBetaalrekening_Click"/>
+        <Button x:Name="btnOpenSpaarrekening" Content="Open Spaarrekening" HorizontalAlignment="Left" Margin="140,432,0,0" VerticalAlignment="Top" Width="180" Height="50" FontSize="15" Click="btnOpenSpaarrekening_Click"/>
+        <Button x:Name="btnLogUit" Content="Log uit" HorizontalAlignment="Left" Margin="357,31,0,0" VerticalAlignment="Top" Width="97" Height="36" Click="btnLogUit_Click"/>
+        <Label x:Name="lblNaamBank" Content="Welkom bij de Nationale Wij Willen Een Tien Bank" HorizontalAlignment="Left" Margin="68,150,0,0" VerticalAlignment="Top" FontSize="16"/>
+    </Grid>
+</Window>

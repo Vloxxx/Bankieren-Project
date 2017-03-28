@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Bank.Rekening">
+    <Position X="5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAgAIAAIAAAAAEAAQAAAAAAAAAAAAAAAAAACAAAAA=</HashCode>
+      <FileName>BusinessLayer\Rekening.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bank.Spaarrekening">
+    <Position X="3.25" Y="1.75" Width="1.5" />
+    <InheritanceLine Type="Bank.Rekening" FixedToPoint="true">
+      <Path>
+        <Point X="5.75" Y="0.5" />
+        <Point X="5.75" Y="0.26" />
+        <Point X="4" Y="0.26" />
+        <Point X="4" Y="1.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>IAAAgAIAAIQAAgAEAIQAAAAAAAACAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>BusinessLayer\Spaarrekening.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bank.Betaalrekening">
+    <Position X="7" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAgAIAGIAAABAEAAQAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BusinessLayer\Betaalrekening.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bank.Persoon">
+    <Position X="4" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAQggAAEIAAAEAAAQAAAAEAAACAAAAAgAAAAAAAA=</HashCode>
+      <FileName>BusinessLayer\Persoon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bank.Bankrekeninghouder">
+    <Position X="6" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQIAAQAAAgAAABAAAgAQAAAAAAAAAAgEAAAIAAEAAAA=</HashCode>
+      <FileName>BusinessLayer\Bankrekeninghouder.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Persoon" />
+      <Property Name="Betaalrekening" />
+      <Property Name="Spaarrekening" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Bank.DataProvider">
+    <Position X="10" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAEAAAAAAAQA=</HashCode>
+      <FileName>DataLayer\DataProvider.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bank.Bank">
+    <Position X="9.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAEAAAAAAAAQAAgAEQAIAAEAAhAAAQAAAAA=</HashCode>
+      <FileName>BusinessLayer\Bank.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Bankrekeninghouderslijst" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

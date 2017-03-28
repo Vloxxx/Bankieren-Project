@@ -1,0 +1,24 @@
+﻿<Window x:Class="Bankieren.Inloggen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bankieren"
+        mc:Ignorable="d"
+        Title="Inloggen" Height="497" Width="444" Closing="Window_Closing">
+    <Grid>
+        <Image x:Name="logo_jpg" Margin="135,36,152.6,281.2" Source="Images/logo.jpg" Width="150" Height="150"/>
+        <TextBox x:Name="tbxGebruikersnaam" HorizontalAlignment="Left" Height="23" Margin="218,233,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="145" PreviewTextInput="StringIntPreviewTextInput" MaxLength="13"/>
+        <PasswordBox x:Name="pasxwachtwoord" HorizontalAlignment="Left" Height="23" Margin="218,275,0,0" VerticalAlignment="Top" Width="145" PreviewTextInput="StringIntPreviewTextInput" MaxLength="13"/>
+        <Label x:Name="lblgebruikersnaam" Content="Gebruikersnaam:" HorizontalAlignment="Left" Margin="88,230,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblwachtwoord" Content="Wachtwoord:" HorizontalAlignment="Left" Margin="107,275,0,0" VerticalAlignment="Top"/>
+        
+        <RadioButton x:Name="radBankbediende" Content="Bankbediende" HorizontalAlignment="Left" Margin="190,345,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
+        <RadioButton x:Name="radClient" Content="Cliënt" HorizontalAlignment="Left" Margin="295,345,0,0" VerticalAlignment="Top" Visibility="Hidden" />
+        <Label x:Name="lblinloggen" Content="Inloggen als:" HorizontalAlignment="Left" Margin="76,339,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
+        
+        <Button x:Name="btnLogIn" Content="Inloggen" HorizontalAlignment="Left" Margin="135,398,0,0" VerticalAlignment="Top" Width="200" Height="40" FontSize="15" Click="btnLogIn_Click"/>
+        <Label x:Name="lblNaamBank" Content="Welkom bij de Nationale Wij Willen Een Tien Bank" HorizontalAlignment="Left" Margin="30,186,0,0" VerticalAlignment="Top" FontSize="16"/>
+
+    </Grid>
+</Window>
